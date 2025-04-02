@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Resource Override</title>
+  <style>
+    body {
+      width: 400px;
+      font-family: Arial, sans-serif;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .rule {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      margin-top: 5px;
+    }
+    .delete-btn {
+      background-color: red;
+      padding: 5px;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>URL Redirection</h2>
+  
+  <input type="text" id="pageUrl" placeholder="Main page URL">
+  <input type="text" id="networkUrl" placeholder="URL to replace">
+  <input type="text" id="replacementUrl" placeholder="New URL">
+  <button id="addRule">Add Rule</button>
+
+  <h3>Active Rules:</h3>
+  <div id="rulesList"></div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

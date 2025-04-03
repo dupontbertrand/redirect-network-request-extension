@@ -13,7 +13,7 @@ This Chrome extension allows users to override network requests by replacing spe
 ### 1. Download the Extension Files
 Clone or download this repository to your local machine.
 ```sh
- git clone https://github.com/your-repo/resource-override-extension.git
+ git clone https://github.com/dupontbertrand/redirect-network-request-extension.git
 ```
 
 ### 2. Load the Extension in Chrome

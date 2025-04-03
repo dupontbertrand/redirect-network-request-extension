@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Override Custom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .rule {
+            margin-bottom: 10px;
+        }
+        .rule input {
+            margin-right: 5px;
+        }
+        .delete-btn {
+            margin-left: 5px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .delete-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h2>Resource Override Custom</h2>
+    <div>
+        <label for="mainPageUrl">Main Page URL:</label>
+        <input type="text" id="mainPageUrl" placeholder="Enter the main page URL">
+    </div>
+    <div>
+        <label for="networkUrl">Network URL:</label>
+        <input type="text" id="networkUrl" placeholder="Enter the network URL to match">
+    </div>
+    <div>
+        <label for="replacementUrl">Replacement URL:</label>
+        <input type="text" id="replacementUrl" placeholder="Enter the replacement URL">
+    </div>
+    <div>
+        <label for="isActive">Activate Rule:</label>
+        <input type="checkbox" id="isActive">
+    </div>
+    <button id="addRule">Add Rule</button>
+
+    <h3>Active Rules:</h3>
+    <div id="rulesList"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
